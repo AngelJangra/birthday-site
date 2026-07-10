@@ -74,7 +74,7 @@ export default function Home() {
             {isBirthday ? (
               <BirthdayCelebration key="celebration" />
             ) : (
-              <Countdown key="countdown" targetDate={15} onCountdownEnd={() => setShowForYouBtn(true)} />
+              <Countdown key="countdown" targetDate={birthdaydate} onCountdownEnd={() => setShowForYouBtn(true)} />
             )}
           </AnimatePresence>
         </motion.div>
