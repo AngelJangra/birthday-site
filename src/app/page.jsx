@@ -14,7 +14,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
   const [bubbles, setBubbles] = useState([])
   const [showForYouBtn, setShowForYouBtn] = useState(false)
-  const birthdayDate = new Date("April 28, 2025") // Change this date accordingly
+  const birthdayDate = new Date("July 15, 2026") // Change this date accordingly
   const audioRef = useRef(null)
 
   // For testing
@@ -74,7 +74,7 @@ export default function Home() {
             {isBirthday ? (
               <BirthdayCelebration key="celebration" />
             ) : (
-              <Countdown key="countdown" targetDate={birthdayDate} onCountdownEnd={() => setShowForYouBtn(true)} />
+              <Countdown key="countdown" targetDate={15} onCountdownEnd={() => setShowForYouBtn(true)} />
             )}
           </AnimatePresence>
         </motion.div>
